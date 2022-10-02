@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html >
+
+<head>
+  <title>Disco-time</title>
+  <h1>Welcome to Disco-time !</h1>
+</head>
+
+<body>
+<form action="../generate" method="GET">
+  <fieldset>
+  <input name="promptInput">
+    <input name="characterInput">
+      <input name="genreInput">
+
+      <input type="submit">
+	<script>
+document.addEventListener("click", f());
+function f() {
+ document.getElementbyId("prompt").innerHTML = "Hello World";
+}
+</script>
+</form>
+
+{{text}}
+
+</body>
+</html>
