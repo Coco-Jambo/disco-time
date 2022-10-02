@@ -1,5 +1,0 @@
-# requirements.txt
-
-Flask==2.0.1
-Cohere==2.5.0
-
