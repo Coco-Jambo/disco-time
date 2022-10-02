@@ -62,24 +62,19 @@ def generate():
     character = request.args.get('characterInput')
     genre = request.args.get('genreInput')
 
-    print(userPrompt)
-    print(character)
-    print(genre)
-
     current_prompt = " " + userPrompt + "\nCharacter: " + character + "\nGenre: " + genre + "\nStory: "
     def generate_text(base_prompt, current_prompt):
         response = co.generate(
-            model='large',
+            model='xlarge',
             prompt=base_prompt + current_prompt,
             max_tokens=300,
-            temperature=5,
+            temperature=3.0,
             stop_sequences=[".\n\n"])
         generation = response.generations[0].text
 
         return generation
 
     return render_template("index.html", text=generate_text(prompt, current_prompt))
-
 
 if __name__ == '__main__':
     app.run(host="127.0.0.1", port=8080, debug=True)
