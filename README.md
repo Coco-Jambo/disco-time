@@ -6,7 +6,7 @@ This is our first AI related project that was done in the McGill AI Society Hack
 * Constance Prevot
 * Tayba Jusab
 
-## Languages and software used
+## Languages and tools used
 * Python
 * Flask
 * Co:here
