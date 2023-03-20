@@ -2,7 +2,7 @@
 
 from flask import Flask, render_template, request
 import cohere
-co = cohere.Client("TkPa2y63AqaCNl6v1gfN7LTloymxVMwJGH0FMIbE")
+co = cohere.Client("INSERT KEEY")
 
 app = Flask(__name__)
 
